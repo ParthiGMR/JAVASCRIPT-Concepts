@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function dis()
+		{
+			var n1=parseInt(document.getElementById("t1").value);
+			{
+			if(n1<=100)
+		{
+			document.getElementById("res").innerHTML="free";
+			if(n1>100 && n1<=200)
+				parseInt(document.getElementById("res").innerHTML)="Rs."+n1*2;
+			else if(n1>200 && n1<=300)
+				parseInt(document.getElementById("res").innerHTML)="Rs."+n1*3;
+		}
+		
+			else (n1>300 && n1<=400)
+			{
+				parseInt(document.getElementById("res").innerHTML)="Rs."+n1*5;
+			}
+			
+			
+
+		}
+	}
+		
+	</script>
+</head>
+<body>
+<label>Enter Unit:</label>
+<input type="text" id="t1" placeholder="unit"><br><br>
+<input type="button" value="Get Amount" onclick="dis()">
+<div id="res"></div>
+</body>
+</html>

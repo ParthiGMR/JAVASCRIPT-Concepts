@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#but1").click(function(){
+				$("p").hide();
+			});
+			$("#but2").click(function(){
+				$("p").show();
+			});
+		});
+	</script>
+</head>
+<body>
+	<p>This is paragraph</p>
+<button id="but1">hide</button>
+<button id="but2">show</button>
+
+</body>
+</html>

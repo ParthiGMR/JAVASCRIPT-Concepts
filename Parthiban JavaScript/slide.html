@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		
+		function up()
+		{
+           document.getElementById("img").height=document.getElementById("img").height-40;
+           document.getElementById("img").height=document.getElementById("img").height;
+           if(document.getElementById("img").height>0)
+           	setTimeout(up,10,"javascript");
+
+		}
+		function down()
+		{
+           document.getElementById("img").height=document.getElementById("img").height+40;
+           document.getElementById("img").height=document.getElementById("img").height;
+           if(document.getElementById("img").height<600)
+
+           	setTimeout(down,10,"javascript");
+
+
+		}
+		function updown()
+		{
+          if(document.getElementById("img").height>0)
+          	up();
+          else
+          	down();
+		}
+
+
+	</script>
+</head>
+<body>
+<img id="img" src="C:\Users\parth\OneDrive\Pictures\ironman2.png" width="450px" height="600px"><br>
+<input id="but1" type="button" value="slideup" onclick="up()">
+<input id="but2" type="button" value="slidedown" onclick="down()">
+<input id="but2" type="button" value="up/down" onclick="updown()">
+
+
+</body>
+</html>

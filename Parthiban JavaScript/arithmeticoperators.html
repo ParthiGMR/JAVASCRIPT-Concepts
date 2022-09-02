@@ -1,0 +1,24 @@
+[]<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function show()		
+		{
+			var n1=3;
+			var n2=4;
+			document.write(n1+n2*3);//first multiplication will be run next addition will be run only for without bracket
+			document.write("<br>"+(n1+n2)*3);//if you give bracket for specified numbers first that will be run
+			document.write("<br>"+parseInt(5/2));
+			document.write("<br>"+(11%4));
+			document.write("<br>"+(3%4));//3 catnot be divided by 4 so 3 directly shows in output
+			document.write("<br>"+(3/4));
+		}
+	</script>
+</head>
+<body>
+<input type="button" value="Answer" onclick="show()">
+</body>
+</html>

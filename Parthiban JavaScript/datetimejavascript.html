@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function dis()
+		{
+			var togetTimeandDate=new Date();
+			document.getElementById("res").innerHTML=("current date and time:"+togetTimeandDate);
+			document.getElementById("res1").innerHTML=("current date:"+togetTimeandDate.getDate()+"/"+(togetTimeandDate.getMonth()+1)+"/"+togetTimeandDate.getFullYear());
+				document.getElementById("res2").innerHTML=("current time:"+togetTimeandDate.getHours()+"/"+(togetTimeandDate.getMinutes()+1)+"/"+togetTimeandDate.getSeconds());
+			
+
+
+			setTimeout(dis,1000,"javascript");
+		}
+	</script>
+</head>
+<body onload="dis()">
+<div id="res"></div>
+<div id="res1"></div>
+<div id="res2"></div>
+</body>
+</html>

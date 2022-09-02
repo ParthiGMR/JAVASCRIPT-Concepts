@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function show()
+		{
+			const pw=(document.getElementById("pw").value);
+			var ans=confirm("are you sure to view password");
+			alert(pw);
+			if(ans==true)
+		    //if(pw==7548)
+			document.getElementById("res").innerHTML=pw;
+			
+		else
+			document.getElementById("res").innerHTML="***";
+		}
+	</script>
+</head>
+<body>
+<input type="password" id="pw" required><br>
+<input type="button" value="showpassword" onclick="show()"><br>
+<div id="res"></div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#t1
+		{
+			position: absolute;
+			top: 49%;
+			left: 41.8%;
+		}
+		#t2
+		{
+			position: absolute;
+			top: 49%;
+			left: 56.3%;
+		}
+	</style>
+	<script type="text/javascript">
+	    var imgs=new Array("image2","parthi1","parthi2");
+	    var len=imgs.length;
+	    //alert(len);
+	   var i=0;
+	    function show()
+	    {
+          document.getElementById("img1").src="C:/Users/parth/Downloads/"+imgs[i]+".jpg";
+          i++;
+           if(i==len)
+           	i=0;
+	   }
+	   
+	    function dis()
+	    {
+	    	i--;
+	    	if(i==-1)
+	    		i=len-1;
+          document.getElementById("img1").src="C:/Users/parth/Downloads/"+imgs[i]+".jpg";
+          
+	    }
+
+
+	</script>
+</head>
+<body>
+	<center>
+     <img id="img1" src="" width="250" height="350">
+     <input id="t1" type="button" value="&#8594;" onclick="show()">
+     <input id="t2" type="button" value="&#8592;" onclick="dis()">
+ </center>
+</body>
+</html>

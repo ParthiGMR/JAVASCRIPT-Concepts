@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function dis()
+		{
+			let a=parseInt(document.getElementById("t1").value);
+			let b=parseInt(document.getElementById("t2").value);
+			switch(b)
+			{
+				case 1:case 3:case 5:case 7:case 8:case 10:case 12:
+				     document.getElementById("res").innerHTML="31 days";
+				     break;
+				case 2:
+				     if(a%4==0)
+					 document.getElementById("res").innerHTML="29 days";
+				     else
+					 document.getElementById("res").innerHTML="28 days";
+				     break;
+				case 4:
+				case 6:
+				case 9:
+				case 11:
+				document.getElementById("res").innerHTML="30 days"
+				break;
+				default:
+				document.getElementById("res").innerHTML="Enter correct choice:"
+			}
+		}
+
+
+			
+
+		
+	</script>
+</head>
+<body>
+<input type="text" id="t1" placeholder="Enter a year"><br><br>
+<input type="text" id="t2" placeholder="Enter a month"><br>
+<input type="button" value="clickme" onclick="dis()">
+<div id="res">
+	
+</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+     var imgarray=new Array("Demo image1","Demoimage1.0","ironman2");
+     var len=imgarray.length;
+     var i=0;
+	function dis()
+	{
+		
+	 document.getElementById("img1").src="C:/Users/parth/OneDrive/Pictures/"+imgarray[i]+".png"
+	 i++;
+	 if(i==len)
+	 	i=0;
+	 setTimeout(dis,1000,"javascript");
+	}	
+	</script>
+</head>
+<body onload="dis()">
+<img id="img1" src="" width="500" height="450">
+<div id="res"></div>
+</body>
+</html>

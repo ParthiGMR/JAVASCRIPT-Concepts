@@ -1,0 +1,157 @@
+/*#37517E*/
+
+
+.topbar
+{
+	position: fixed;
+	width: 100%;
+	height: 70px;
+	background-color: #37517E;
+	top: 0px;
+	left: 0px;
+}
+#name
+		{
+			position: absolute;
+			color: whitesmoke;
+			font-size: 25px;
+			left: 5%;
+			top: 27.5%;
+		}
+#list
+{
+	position: absolute;
+	display: none;
+	list-style-type: none;
+	 min-width: 170px;
+         
+     font-size: 20px;
+          
+          top: 3.5%;
+          margin-left: -6%;
+}
+#link
+{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+
+
+}
+#div1:hover #list
+{
+ position: fixed;
+ display: block;
+}
+#div2:hover #list
+{
+ position: fixed;
+ display: block;
+}
+#div3:hover #list
+{
+ position: fixed;
+ display: block;
+}
+#div4:hover #list
+{
+ position: fixed;
+ display: block;
+}
+#div1,#div2,#div3,#div4
+{
+	display: inline-block;
+}
+#linkgrps
+{
+	margin-right: 10%;
+	float: right;
+}
+#div1
+{
+	position: absolute;
+	left: 50%;
+	top: 35%;
+}#div2
+{
+	position: absolute;
+	left: 60%;
+	top: 35%;
+}#div3
+{
+	position: absolute;
+	left: 70%;
+	top: 35%;
+}#div4
+{
+	position: absolute;
+	left: 80%;
+	top: 35%;
+}
+li
+		{
+			padding: 10px;
+			text-align: center;
+			border-radius: 5px;
+		}
+		li:hover
+		{
+          background-color: white;
+          min-width: 140px;
+
+
+		}
+
+#bg
+{
+ position: absolute;
+ top: 400%;
+ left: 17%;
+}
+#b1
+{
+	font-size: 40px;
+}
+#b2
+{
+	font-size: 35px;
+}
+#b3
+{
+	font-size: 20px;
+
+}
+input
+		{
+			background-color: #47B2E5;
+			color: white;
+			font-size: 15px;
+			padding: 12px;
+			border: none;
+			border-radius: 15px;
+		}
+		#btn
+		{
+			position: absolute;
+			top: 650%;
+			left: 17%;
+			}
+			body
+			{
+				background-image: url("C:/Users/parth/Downloads/Demo image1.png");
+				background-repeat: no-repeat;
+			}
+			@media screen and (min-width: 900px) {
+  article {
+    padding: 1rem 3rem;
+  }
+}
+
+/* Nested within another conditional at-rule */
+@supports (display: flex) {
+  @media screen and (min-width: 900px) {
+    article {
+      display: flex;
+    }
+  }
+}

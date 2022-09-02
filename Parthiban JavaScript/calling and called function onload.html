@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>	</title>
+	<script type="text/javascript">
+
+		const student={name:"Parthiban",Rollno:24,result:[10,{data1:23,data2:"Parthiban"},30,40,50,60]};
+
+		document.write("<br> student name:"+student["name"]);
+		document.write("<br> student result1:"+student.result[0]);
+		document.write("<br> student result2:"+student.result[1].data2);
+		document.write("<br> student result3:"+student.result[2]);
+		document.write("<br> student result4:"+student.result[3]);
+		document.write("<br> student result5:"+student.result[4]);
+		document.write("<br> student result6:"+student.result[5]);
+		function dis(a,b)
+		//const dis=(a,b)=>
+		{
+			document.getElementById("res").innerHTML="<br>Answer ="+(a+b);
+		}
+
+
+	</script>
+</head>
+<body onload="dis(11,22)">
+	<br><input type="button" value="clickme" onclick="dis(12,23)"><br>
+	<input type="button" value="clickme" onclick="dis(13,24)"><br>
+	<input type="button" value="clickme" onclick="dis(14,25)"><br>
+	<input type="button" value="clickme" onclick="dis(15,26)"><br>
+	<div id="res"></div>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>	</title>
+	<script type="text/javascript">
+		function dis()
+		{
+			var n1=parseInt(document.getElementById("t1").value);
+			
+			if(n1>=18)
+			{
+			document.getElementById("res").innerHTML="Eligible";
+		}
+		    else
+		    {
+		    	document.getElementById("res").innerHTML="Not Eligible";
+		    }
+		}
+	
+
+	</script>
+</head>
+<body>
+<input type="text" id="t1" placeholder="age"><br>
+<input type="button" value="clickme" onclick="dis()"><br>
+<div id="res"></div>
+</body>
+</html>

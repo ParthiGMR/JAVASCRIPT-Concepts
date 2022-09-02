@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function dis()
+		{
+			alert("test");
+			console.log("test");
+			var mydata=myform.t1.value;
+			//alert(mydata);
+			//document.write("your data:"+mydata);
+			document.getElementById("res").innerHTML=mydata;
+		}
+	</script>
+</head>
+<body>
+<form name="myform">
+	<label>Enter your data:</label><br>
+	<input type="text" name="t1"><br>
+	<input type="button" value="show data" onclick="dis()"><br>
+</form>
+<div id="res">
+</body>
+</html>

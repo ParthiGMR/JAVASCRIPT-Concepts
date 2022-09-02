@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function dis()
+		{
+		var a=parseInt(document.getElementById("t1").value);
+		var b=parseInt(document.getElementById("t2").value);
+		var c=parseInt(document.getElementById("t3").value)
+		;//abc ab c
+		var big,ans;
+		big=a>b ? a : b;
+         ans=big>c ? big: c;
+         
+		document.getElementById("res").innerHTML="Biggest Number=" +ans;
+	}
+	</script>
+</head>
+<body>
+<input type="text" id="t1" placeholder="value1"><br>
+<input type="text" id="t2" placeholder="value2"><br>
+<input type="text" id="t3" placeholder="value3"><br>
+
+<input type="button" value="clickme" onclick="dis()">
+<div id="res"></div>
+</body>
+</html>

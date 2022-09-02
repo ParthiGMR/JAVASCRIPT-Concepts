@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function dis()
+		{
+			var n1=parseInt(document.getElementById("t1").value);
+			var n2=parseInt(document.getElementById("t2").value);
+
+	    for(var i=n1;i<=n2;i++)
+	    {
+			if(i%5==0)
+			document.write("<font color='red'>"+i+"</font>");
+		
+			else
+			document.write("<font color='green'>"+i+"</font>");
+		}
+	}
+	</script>
+</head>
+<body>
+<input type="text" id="t1" placeholder="Enter starting number:"><br>
+<input type="text" id="t2" placeholder="Enter starting number:"><br>
+<input type="button" value="clickme" onclick="dis()">
+</body>
+</html>

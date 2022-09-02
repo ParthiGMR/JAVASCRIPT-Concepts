@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function dis()
+		{
+			var a=document.getElementById("blue").checked;
+			var b=document.getElementById("green").checked;
+			var c=document.getElementById("yellow").checked;
+			if(a==true)
+			{
+				document.bgColor="blue";
+			}
+			else if(b==true)
+				document.bgColor="green";
+			else
+				//document.bgColor="yellow";
+			window.open("orlogical.html");
+			
+
+		}
+	</script>
+</head>
+<body>
+<input type="radio" id="blue" name="colors" onclick="dis()">blue<br>
+<input type="radio" id="green" name="colors" onclick="dis()">green<br>
+<input type="radio" id="yellow" name="colors" onclick="dis()">yellow<br>
+</body>
+</html>

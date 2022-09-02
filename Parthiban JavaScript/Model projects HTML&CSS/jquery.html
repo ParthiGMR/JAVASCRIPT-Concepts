@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#but1").click(function(){
+				$("img").slideUp();
+			});
+			$("#but2").click(function(){
+				$("img").slideDown();
+			});
+			$("#but3").click(function(){
+				$("img").slideToggle();
+			});
+		})
+	</script>
+</head>
+<body>
+	<img src="C:\Users\parth\Downloads\ironman.jpeg" width="200px">
+	<br>
+<button id="but1">up</button>
+<button id="but2">down</button>
+<button id="but3">up/down</button>
+
+</body>
+</html>

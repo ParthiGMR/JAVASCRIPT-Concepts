@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function show()
+		{
+		var a=document.getElementById("t1").value;
+		var b=document.getElementById("t2").value;
+		var ch=document.getElementById("t3").value;
+        switch(ch)
+        {
+        	case 1:
+        	(a==1,3,5,7,8,10,12) && (b>0);
+        	document.getElementById("res").innerHTML="31 days"
+        }
+    }
+       
+			
+
+			
+			
+
+		
+	
+	</script>
+</head>
+<body>
+<h1>Find no of days:</h1>
+<label>Enter month:</label>
+<input type="text" id="t1" placeholder="Enter month"><br><br>
+<label>Enter year:&nbsp;&nbsp;&nbsp;</label>
+<input type="text" id="t2" placeholder="Enter year"><br>
+<input type="text" id="t3" placeholder="Enter value">
+<input type="button" value="Find days" onclick="show()"><br>
+<div id="res">
+	
+</div>
+</body>
+</html>

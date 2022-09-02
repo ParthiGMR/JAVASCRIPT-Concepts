@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function dis()
+		{
+		var marks=new Array("t1","t2","t3","t4","t5","t6","t7","t8","t9","t10");
+		var len=marks.length;
+		var m=0;
+
+		for(i=0; i<len; i++)
+		{
+			m=m+parseInt(document.getElementById(marks[i]).value);
+
+		}
+		document.getElementById("res").innerHTML=m;
+	}
+		
+	</script>
+</head>
+<body>
+<input type="text" id="t1" placeholder="Enter mark1"><br>
+<input type="text" id="t2" placeholder="Enter mark1"><br>
+<input type="text" id="t3" placeholder="Enter mark1"><br>
+<input type="text" id="t4" placeholder="Enter mark1"><br>
+<input type="text" id="t5" placeholder="Enter mark1"><br>
+<input type="text" id="t6" placeholder="Enter mark1"><br>
+<input type="text" id="t7" placeholder="Enter mark1"><br>
+<input type="text" id="t8" placeholder="Enter mark1"><br>
+<input type="text" id="t9" placeholder="Enter mark1"><br>
+<input type="text" id="t10" placeholder="Enter mark1"><br>
+
+
+<input type="button" value="clickme" onclick="dis()">
+<div id="res"></div>
+</body>
+</html>
