@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function show()
+		{
+			var ans=document.getElementById("para").innerHTML; 
+			document.getElementById("para").innerHTML="Parthiban " +ans;
+		}
+		function dis()
+		{
+			var ans=document.getElementById("para").innerHTML;
+			document.getElementById("para").innerHTML=ans+ " Parthiban";
+		}
+	</script>
+</head>
+<body>
+	<p id="para">This is para</p>
+<input type="button" onclick="show()" value="clickme">
+<input type="button" onclick="dis()" value="clickme">
+</body>
+</html>
