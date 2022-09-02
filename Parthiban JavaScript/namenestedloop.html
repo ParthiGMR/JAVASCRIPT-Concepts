@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function dis()
+		{
+			var n1=document.getElementById("t1").value;
+			var len=n1.length;
+			alert(len);
+             
+			for(var i=0;i<len;i++)
+			{
+				for(var j=0;j<=i;j++)
+				{
+					document.write(n1.charAt(j)+" ");
+				}
+				document.write("<br>");
+			}
+		}
+	</script>
+</head>
+<body>
+<input type="text" id="t1" placeholder="Enter Name:"><br>
+<input type="button" value="clickme" onclick="dis()">
+</body>
+</html>
